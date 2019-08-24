@@ -1,0 +1,71 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dream Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Dream Survey</h1>
+        <p id="description">
+            Fill in information about your dream (the kind you have when you are asleep).
+        </p>
+        <form action="https://www.chess.com" target="_blank" id="survey-form">
+            
+            <label id="name-label" for="name-label">
+                <span class="red">*</span>Name:
+                <input id="name" type="text" name="name" placeholder="Enter name here" required>  
+            </label>
+            
+            <label for="email" id="email-label">
+                <span class="red">*</span>E-mail:
+                <input id="email" type="email" name="email" required placeholder="Enter email here">
+            </label>
+            
+            <label for="dream-number" id="number-label">
+                <span class="red">*</span>Dream Log Number: 
+                <input id="number" type="number" name="dream-number" min="0" max="10000" required placeholder="Dreamlog #">
+            </label>
+            
+            <label for="dream-description" id="checkbox">
+                Witch words best describe your dream?
+                <div id="checkbox">
+                    <input type="checkbox" name="dream-description" value="enjoyable">Enjoyable<br>
+                    
+                    <input type="checkbox" name="dream-description" value="Scary">Scary<br>
+                    
+                    <input type="checkbox" name="dream-description" value="Funney">Funney<br>
+                    
+                    <input type="checkbox" name="dream-description" value="Intersting">Intersting<br>
+                    
+                    <input type="checkbox" name="dream-description" value="Psychadelic">Psychadelic<br>
+                    
+                    <input type="checkbox" name="dream-description" value="Stressfull">Stressfull<br>
+                </div>               
+            </label>
+            <label for="select" name="memory">
+                How well do you remember your dream?
+                <select name="memory" id="dropdown">
+                    <option value="Very good">Very good</option>
+                    <option value="Good">Good</option>
+                    <option value="Just a bit">Just a bit</option>
+                    <option value="Not at all">Not at all</option>
+                </select>
+            </label><br>
+            <label for="radios" id="radio-label">
+                <input type="radio" name="gender" value"Female">Female<br>
+              
+                <input type="radio" name="gender" value"Male">Male<br>
+              
+                <input type="radio" name="gender" value"Other">Other<br>
+            </label>
+            
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

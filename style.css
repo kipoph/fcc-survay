@@ -1,0 +1,19 @@
+#email-label,
+#number-label,
+#name-label,
+#radio,
+#submit
+label{
+    display: block;
+    
+}
+.red{
+    color:red;
+}
+#main{
+    background-color: azure;
+    text-align: center;
+}
+{
+    display:block;
+}
